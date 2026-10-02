@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OncoReady — consultation readiness &amp; patient journey review</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23101a2b'/%3E%3Cpath d='M5 19h6l3-8 4 12 3-7h6' fill='none' stroke='%233cc3cf' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <nav class="side" aria-label="Main">
+    <div class="brand">
+      <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1f3350"/><path d="M5 19h6l3-8 4 12 3-7h6" fill="none" stroke="#3cc3cf" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      OncoReady
+    </div>
+    <a href="#/dashboard" data-r="dashboard">Today</a>
+    <a href="#/patients" data-r="patients">Referral registry</a>
+    <a href="#/planner" data-r="planner">Clinic planner</a>
+    <a href="#/analytics" data-r="analytics">Journey analytics</a>
+    <a href="#/model" data-r="model">Delay-risk model</a>
+    <a href="#/audit" data-r="audit">Audit log</a>
+    <a href="#/settings" data-r="settings">Settings &amp; data</a>
+    <div class="grow"></div>
+    <div class="foot">Decision support only. Clinical judgement always prevails.</div>
+  </nav>
+  <main id="view" aria-live="polite"></main>
+</div>
+<div class="toasts" id="toasts"></div>
+<div id="modal-root"></div>
+<script src="app.js"></script>
+</body>
+</html>
